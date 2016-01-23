@@ -178,7 +178,7 @@ body {
 }
 .images_1_of_4 h4 a:hover{
 	text-decoration:none;
-	color: #ff5454;
+	color: #AA0000;
 }
 .images_1_of_4  span{
 	width: 120px;
@@ -245,7 +245,7 @@ body {
 	transition: all 0.3s;
 }
 .btn-1 {
-	border: 2px solid #ff5454;
+	border: 2px solid #AA0000;
 	color: #333333;
 }
 /* Button 1e */
@@ -257,7 +257,7 @@ body {
 	height: 0;
 	top: 50%;
 	left: 50%;
-	background: #ff5454;
+	background: #AA0000;
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -288,7 +288,7 @@ body {
 	line-height: 1.5em;
 }
 .content_right h4 span{
-	color: #ff5454;
+	color: #AA0000;
 }
 .content_right a{
 	position: relative;
@@ -307,7 +307,7 @@ body {
 	line-height: 1.8em;
 }
 .copy p a{
-	color:#ff5454;
+	color:#AA0000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -367,7 +367,7 @@ body {
 }
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
 	color: #FFFFFF;
-	background-color: #ff5454;
+	background-color: #AA0000;
 	border-color: #DA4A4A;
 }
 .alert {
@@ -403,7 +403,7 @@ body {
 }
 .blog_left h4 a:hover{
 	text-decoration: none;
-	color: #ff5454;
+	color: #AA0000;
 }
 .blog_list{
 
@@ -431,7 +431,7 @@ body {
 	color: #b6b6b6;
 }
 .blog_list li span:hover,.blog_list li a:hover{
-	color: #ff5454;
+	color: #AA0000;
 	text-decoration: none;
 }
 
@@ -588,7 +588,7 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 .tag_nav li.active a,.tag_nav li a:hover{
-	background: #ff5454;
+	background: #AA0000;
 	color: #ffffff;
 	text-decoration:none;
 }
@@ -633,7 +633,7 @@ body {
 	color: #333333;
 }
 .company_ad p a {
-	color: #ff5454;
+	color: #AA0000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -681,7 +681,7 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 .contact-form textarea:focus{
-	border:1px solid #ff5454;
+	border:1px solid #AA0000;
 }
 .form-control{
 	box-shadow: none;
@@ -709,7 +709,7 @@ body {
 	z-index: 1;
 }
 .form-control:focus {
-	border-color: #ff5454;
+	border-color: #AA0000;
 }
 /* start details */
 .details img{
