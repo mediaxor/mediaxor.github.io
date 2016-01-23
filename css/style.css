@@ -21,7 +21,8 @@ body {
 }
 /* start header */
 .header_bg{
-	border-top:8px groove #3b3b3b;
+	/*border-top:8px groove #3b3b3b;*/
+	border-top:8px groove #333333;
 	background: #ffffff;
 }
 .header_bg1 {
@@ -100,7 +101,8 @@ body {
 	padding: 0;
 }
 .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover{
-	background: #FF5454;
+	/*background: #FF5454;*/
+	background: #AA0000;
 	color: #ffffff;
 }
 .navbar-default .navbar-nav > li > a {
