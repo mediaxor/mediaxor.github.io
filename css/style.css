@@ -32,12 +32,14 @@ body {
 .header{
 	padding: 2% 0;
 }
-.logo h1 a{
-	font-size: 1em;
-	text-transform: uppercase;
-	color: #3B3B3B;
-	text-decoration: none;
-	font-family: 'texgyreadventorregular';
+.logo h1 {
+	float: left;
+	text-indent:-22222px;
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	margin-top:20px;
+	height: 47px;
+	width: 178px;
 }
 /* search */
 .h_search{
