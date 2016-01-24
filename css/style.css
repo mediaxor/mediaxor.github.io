@@ -246,10 +246,13 @@ body {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
+.btn-1-slider {
+	border: 2px solid #AA0000;
+	color: #ffffff;
+}
 .btn-1 {
 	border: 2px solid #AA0000;
-	/*color: #333333;*/
-	color: #ffffff;
+	color: #333333;
 }
 /* Button 1e */
 .btn-1e {
