@@ -248,7 +248,8 @@ body {
 }
 .btn-1 {
 	border: 2px solid #AA0000;
-	color: #333333;
+	/*color: #333333;*/
+	color: #ffffff;
 }
 /* Button 1e */
 .btn-1e {
