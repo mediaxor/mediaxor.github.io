@@ -214,6 +214,7 @@ body {
 	font-size: 14px;
 	line-height: 1.8em;
 	color: #868686;
+	text-align: justify;
 }
 .images_1_of_4 a{
 	position: relative;
@@ -395,6 +396,7 @@ body {
 	width:100%;
 }
 .blog_left h4{
+	padding: 8px;
 	margin:0 0 20px;
 	
 	display: block;
