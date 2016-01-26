@@ -284,6 +284,9 @@ body {
 	opacity: 1;
 }
 /* start main_btm */
+.main_top{
+	background: #FFFFFF;
+}
 .main_btm{
 	background: #FFFFFF;
 	border-top: 1px solid rgb(233, 233, 233);
@@ -293,11 +296,26 @@ body {
 	font-size: 2.5em;
 	font-family: 'texgyreadventorregular';
 	line-height: 1.5em;
+	text-align: center;
 }
 .content_right h4 span{
 	color: #AA0000;
 }
 .content_right a{
+	position: relative;
+	z-index: 1;
+}
+.content_left h4{
+	color: #353535;
+	font-size: 2.5em;
+	font-family: 'texgyreadventorregular';
+	line-height: 1.5em;
+	text-align: center;
+}
+.content_left h4 span{
+	color: #AA0000;
+}
+.content_left a{
 	position: relative;
 	z-index: 1;
 }
@@ -332,6 +350,19 @@ body {
 	margin: 0 0 20px;
 	text-transform: capitalize;
 	font-size: 3em;
+	color:#aa0000;
+	font-family: 'texgyreadventorregular';
+}
+.about h1{
+	margin: 0 0 20px;
+	text-transform: capitalize;
+	font-size: 2em;
+	color:#aa0000;
+	font-family: 'texgyreadventorregular';
+}
+.about h4{
+	margin: 0 0 20px;
+	font-size: 1.5em;
 	color:#333333;
 	font-family: 'texgyreadventorregular';
 }
@@ -339,14 +370,19 @@ body {
 	position: relative;
 	z-index: 1;
 }
+.about_list{
+	margin: 0 0 20px;
+	font-size: 1.5em;
+	color:#333333;
+	font-family: 'texgyreadventorregular';
+}
 /* start  technology */
 .technology{
-	padding: 4% 0;
+	padding: 1% 0;
 }
 .technology h2{
-	margin: 0 0 20px;
-	text-transform: capitalize;
-	font-size: 3em;
+	margin: 0 0 10px;
+	font-size: 1.5em;
 	color: #333333;
 	font-family: 'texgyreadventorregular';
 }
