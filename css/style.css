@@ -161,6 +161,11 @@ body {
 .main{
 	padding: 5% 0;
 }
+.main ul li{
+	font-size: 14px;
+	line-height: 1.8em;
+	color: #868686;
+}
 .images_1_of_4 img{
 	display: inline-block;
 }
@@ -835,7 +840,7 @@ body {
 		background-size: 100% 100%;
 	}
 	.main {
-		padding: 4% 0;
+		padding: 2% 0;
 	}
 	.images_1_of_4{
 		margin-bottom: 4%;
