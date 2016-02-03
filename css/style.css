@@ -151,7 +151,7 @@ body {
 .slider_bg{
 	background: url('../images/slider_bg.jpg') no-repeat;
 	background-size: 100%;
-	min-height:530px;
+	/*min-height:530px;*/
 	padding-top:13em;
 }
 /* start main */
@@ -159,7 +159,7 @@ body {
 	background: #ffffff;
 }
 .main{
-	padding: 3% 0;
+	padding: 8% 0;
 }
 .main_title h4{
 	padding: 20px;
@@ -262,7 +262,7 @@ body {
 }
 .btn-1-slider {
 	border: 2px solid #AA0000;
-	color: #ffffff;
+	color: #101010;
 }
 .btn-1 {
 	border: 2px solid #AA0000;
