@@ -161,12 +161,10 @@ body {
 .main{
 	padding: 3% 0;
 }
-.main_title h4{
-	padding: 20px;
-	margin: 0 0 20px;
-	font-size: 3em;
+.main_title {
+	padding: 80px;
 	color:#aa0000;
-	/*font-family: 'texgyreadventorregular';*/
+	line-height: 200%;
 	text-align: center;
 }
 .main ul li{
@@ -224,7 +222,7 @@ body {
 	-ms-text-shadow: 1px 1px 0px #333333;
 }
 .para{
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 1.8em;
 	color: #868686;
 	text-align: justify;
