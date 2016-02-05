@@ -165,7 +165,7 @@ body {
 	padding: 3% 0;
 }
 .main_title_red {
-	padding: 80px;
+	padding: 40px;
 	color:#aa0000;
 	line-height: 200%;
 	text-align: center;
@@ -182,8 +182,8 @@ body {
 	text-align: left;
 }
 .main_para{
-	padding: 40px;
-	font-size: 15px;
+	padding: 20px;
+	font-size: 20px;
 	line-height: 1.2em;
 	color: #101010;
 	text-align: center;
@@ -243,7 +243,7 @@ body {
 	-ms-text-shadow: 1px 1px 0px #333333;
 }
 .para{
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1.2em;
 	color: #868686;
 	text-align: justify;
@@ -817,6 +817,9 @@ body {
 	}
 	.para {
 		font-size: 13px;
+	}
+	.main_para {
+		font-size: 16px;
 	}
 	.content_right h4 {
 		font-size: 2em;
