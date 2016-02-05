@@ -153,6 +153,7 @@ body {
 	background-size: 100%;
 	min-height:530px;
 	padding-top:13em;
+	border-bottom: 4px solid #AA0000;
 }
 /* start main */
 .main_bg{
@@ -160,6 +161,8 @@ body {
 }
 .main_grey{
 	background: #3b3b3b;
+	border-top: 4px solid #AA0000;
+	border-bottom: 4px solid #AA0000;
 }
 .main{
 	padding: 3% 0;
