@@ -171,7 +171,7 @@ body {
 	text-align: center;
 }
 .main_title_white {
-	padding: 80px;
+	padding: 40px;
 	color:#ffffff;
 	line-height: 200%;
 	text-align: center;
@@ -182,7 +182,8 @@ body {
 	text-align: left;
 }
 .main_para{
-	font-size: 20px;
+	padding: 40px;
+	font-size: 15px;
 	line-height: 1.2em;
 	color: #101010;
 	text-align: center;
@@ -243,7 +244,7 @@ body {
 }
 .para{
 	font-size: 15px;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	color: #868686;
 	text-align: justify;
 }
