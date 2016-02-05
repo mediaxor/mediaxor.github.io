@@ -158,18 +158,27 @@ body {
 .main_bg{
 	background: #ffffff;
 }
+.main_grey{
+	background: #3b3b3b;
+}
 .main{
 	padding: 3% 0;
 }
-.main_title {
+.main_title_red {
 	padding: 80px;
 	color:#aa0000;
 	line-height: 200%;
 	text-align: center;
 }
+.main_title_white {
+	padding: 80px;
+	color:#ffffff;
+	line-height: 200%;
+	text-align: center;
+}
 .main_para{
-	font-size: 20px;
-	line-height: 1.8em;
+	font-size: 14px;
+	line-height: 1.2em;
 	color: #101010;
 	text-align: center;
 }
