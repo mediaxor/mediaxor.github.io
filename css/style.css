@@ -162,9 +162,15 @@ body {
 	padding: 3% 0;
 }
 .main_title {
-	padding: 40px;
+	padding: 80px;
 	color:#aa0000;
 	line-height: 200%;
+	text-align: center;
+}
+.main_para{
+	font-size: 20px;
+	line-height: 1.8em;
+	color: #101010;
 	text-align: center;
 }
 .main ul li{
