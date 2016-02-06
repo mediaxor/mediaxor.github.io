@@ -22,7 +22,19 @@
 <script src="https://ajax.googleapis.com/ajax/libsjquery/1.11.3/jquery.min.js">
 </script>
 <script>
+    var firstnum = Math.floor((Math.random() * 10) + 1);
+    var secondnum = Math.floor((Math.random() * 10) + 1);
+    var sum = firstnum + secondnum;
+    var question = 'Are you a robot? What is the value of ' + firstnum.toString() + '+' + secondnum.toString();
+    $('#cucaptcha').val("");
     function postContactToGoogle() {
+    	var captcha = $('#cucaptcha').val();
+    	//console.log('captcha value ' + captcha);
+    	//console.log('Sum is ' + sum);
+    	if(!(sum == captcha)) {
+    		alert('Please provide correct captcha value ');
+    		return;
+    	}
         var phone = $('#cuphone').val();
        // console.log('phone is ' + phone);
 		var email = $('#cuemail').val();
@@ -45,6 +57,7 @@
                     	$('#cuemail').val("");
                     	$('#userName').val("");
                     	$('#cumessage').val("");
+                    	$('#cucaptcha').val("");
                        $('.requestSubmited').show();
                        //console.log('IN error');
                     }
@@ -140,8 +153,12 @@
 						    	<span><input type="tel" class="form-control" id="cuphone"></span>
 						    </div>
 						    <div>
-						    	<span>subject</span>
+						    	<span>Subject</span>
 						    	<span><textarea name="userMsg" id="cumessage"> </textarea></span>
+						    </div>
+						    <div>
+						    	<span><script type="text/javascript">document.write(question)</script></span>
+						    	<span><input type="text" class="form-control" id="cucaptcha"></span>
 						    </div>
 						   <div>
 								<!--<input id="ButtonSubmit" name="" type="button" value="Send" onclick="postContactToGoogle()"/>-->
