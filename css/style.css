@@ -32,6 +32,23 @@ body {
 .header{
 	padding: 2% 0;
 }
+.tech_bg1 {
+	border-top:8px groove #333333;
+	background: url('../images/technology.png') no-repeat  left;
+	background-size: 100%;
+	min-height: 300px;
+	padding-top: 7em;
+	color: #ffffff;
+	border-bottom:4px solid #aa0000;
+}
+.tech_img {
+	background: url('../images/mm_companies.png') no-repeat  left;
+	background-size: 100%;
+	min-height: 850px;
+	padding-top: 7em;
+	color: #ffffff;
+	border-top:4px solid #aa0000;
+}
 .logo h1 {
 	float: left;
 	text-indent:-22222px;
@@ -191,6 +208,11 @@ body {
 	color:#aa0000;
 	line-height: 200%;
 	text-align: left;
+}
+.tech_subtitle_red h1{
+	color:#aa0000;
+	line-height: 200%;
+	text-align: center;
 }
 .main_para{
 	padding: 20px;
@@ -439,12 +461,12 @@ body {
 	margin:10px 0 8px;
 }
 .tech_para{
-	padding: 20px;
+	padding: 40px;
 	font-size: 25px;
 	line-height: 2em;
 	color: #3b3b3b;
 	text-align: center;
-	border-bottom: 4px solid #AA0000;
+	/*border-bottom: 4px solid #AA0000;*/
 }
 .technology_list1{
 	margin-top: 20px;	
@@ -822,6 +844,10 @@ body {
 @media only screen and (max-width: 1024px) {
 	.slider_bg {
 		min-height: 510px;
+		padding-top: 7em;
+	}
+	.tech_bg1 {
+		min-height: 300px;
 		padding-top: 7em;
 	}
 	.banner-info h2 {
