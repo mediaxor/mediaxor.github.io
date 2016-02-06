@@ -23,13 +23,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!----font-Awesome----->
    	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!----font-Awesome----->
+<!-- Google Form API script-->
+<script scr="https://ajax.googleapis.com/ajax/libsjquery/1.11.3/jquery.min.js">
+</script>
+<script>
+    function postContactToGoogle() {
+        var phone = $('#cuphone'),val();
+		var email = $('#cuemail').val();
+        var name = $('#userName').val();
+        var message = $('#cumessage').val();
+        
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
+                data: { "entry_1317510071": name,
+				"entry_990382128": email,
+                "entry_817161042": phone, "entry_1365100489": message },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        window.location.replace("ThankYou.html");
+                    },
+                    200: function () {
+                        window.location.replace("ThankYou.html");
+                    }
+                }
+            });
+    }
+</script>
 </head>
 <body>
 <div class="header_bg1">
 <div class="container">
 	<div class="row header">
 		<div class="logo">
-			<a href="index.html"><img src="images/MXOR1.png" alt=""></a>
+			<a href="index.html"><img src="images/MXOR3.png" alt=""></a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -47,11 +75,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="index.html">Home</a></li>
+		        <li><a href="index.html">Home</a></li>
 		        <li><a href="about.html">About</a></li>
 		        <li><a href="multimedia.html">Multimedia</a></li>
-		        <li><a href="programs.html">Programs</a></li>
-		        <li><a href="contact.html">Contact</a></li>
+		        <li><a href="trainings.html">Trainings</a></li>
+		        <li class="active"><a href="contact.html">Contact</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		    <!-- start soc_icons -->
@@ -71,23 +99,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <div class="main_bg"><!-- start main -->
 	<div class="container">
-		<!--  <div class="main row"> -->
-			<!--  <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>-->
-		
+		<!--<div class="main row">
+			<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
+		</div>-->
 	</div>
 </div><!-- end main -->
 <div class="main_btm"><!-- start main_btm -->
 	<div class="container">
 		<div class="main row">
 			    <div class="col-md-4 company_ad">
-				    <h2>find Address :</h2>
+				    <h2>Address :</h2>
       				<address>
-						 <p>500 Lorem Ipsum Dolor Sit,</p>
-						 <p>22-56-2-9 Sit Amet, Lorem,</p>
-						 <p>USA</p>
-				   		<p>Phone:(00) 222 666 444</p>
-				   		<p>Fax: (000) 000 00 00 0</p>
-				 	 	<p>Email: <a href="mailto:info@mycompany.com">info(at)mycompany.com</a></p>
+						 <p>3/485 Malviya Nagar,</p>
+						 <p>Jaipur, Rajathan</p>
+						 <p>India</p>
+				   		<p>	Phone:(91) 9819 307 404</p>
+				   		<p>Email: <a href="mailto:info@mxacademy.in">info@mxacademy.in</a></p>
 				   		<p>Follow on: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
 				   	</address>
 				</div>
@@ -97,22 +124,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					    <form>
 					    	<div>
 						    	<span>name</span>
-						    	<span><input type="username" class="form-control" id="userName"></span>
-						    </div>
-						    <div>
-						    	<span>Phone</span>
-						    	<span><input type="tel" class="form-control" id="mobile"></span>
+						    	<span><input type="text" class="form-control" id="userName"></span>
 						    </div>
 						    <div>
 						    	<span>e-mail</span>
-						    	<span><input type="email" class="form-control" id="inputEmail3"></span>
+						    	<span><input type="text" class="form-control" id="cuemail"></span>
+						    </div>
+							 <div>
+						    	<span>Phone</span>
+						    	<span><input type="text" class="form-control" id="cuphone"></span>
 						    </div>
 						    <div>
 						    	<span>subject</span>
-						    	<span><textarea name="userMsg"> </textarea></span>
+						    	<span><textarea name="userMsg" id="cumessage"> </textarea></span>
 						    </div>
 						   <div>
-						   		<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit us"></label>
+								<!--<input id="ButtonSubmit" name="" type="button" value="Send" onclick="postContactToGoogle()"/>-->
+								<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit" onclick="postContactToGoogle()></label>
+								
 						  </div>
 					    </form>
 				    </div>
@@ -125,10 +154,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="row  footer">
 			<div class="copy text-center">
-				<p class="link"><span>&copy; 2016 Mediaxor Technologies Private Limited. All rights reserved</span></p>
+				<p class="link"><span>&copy; 2016 Mediaxor Technologies Private Limited. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></span></p>
 			</div>
 		</div>
 	</div>
 </div>
 </body>
 </html>
+
