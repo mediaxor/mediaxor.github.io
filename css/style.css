@@ -173,6 +173,7 @@ body {
 	line-height: 2em;
 	color: #3b3b3b;
 	text-align: center;
+	border-bottom: 4px solid #AA0000;
 }
 .main_title_red {
 	padding: 40px;
