@@ -33,10 +33,10 @@
         //console.log('message is ' + message);
         
             $.ajax({
-                url: "https://docs.google.com/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
-                data: { "entry.1317510071": name,
-				"entry.990382128": email,
-                "entry.817161042": phone, "entry.1365100489": message },
+                url: "https://docs.google.com/forms/d/1nq5xsCIEhDwB95S7OG6w97pK81c4Xb6iUnwpBuR89BE/formResponse",
+                data: { "entry.1082499048": name,
+				"entry.955035896": email,
+                "entry.1451503225": phone, "entry.1140068825": message },
                 type: "POST",
                 dataType: "xml",
                 statusCode: {
@@ -46,7 +46,7 @@
                     	$('#userName').val("");
                     	$('#cumessage').val("");
                        $('.requestSubmited').show();
-                       console.log('IN error');
+                       //console.log('IN error');
                     }
                 }
             });
@@ -133,11 +133,11 @@
 						    </div>
 						    <div>
 						    	<span>e-mail</span>
-						    	<span><input type="text" class="form-control" id="cuemail"></span>
+						    	<span><input type="email" class="form-control" id="cuemail"></span>
 						    </div>
 							 <div>
 						    	<span>Phone</span>
-						    	<span><input type="text" class="form-control" id="cuphone"></span>
+						    	<span><input type="tel" class="form-control" id="cuphone"></span>
 						    </div>
 						    <div>
 						    	<span>subject</span>
