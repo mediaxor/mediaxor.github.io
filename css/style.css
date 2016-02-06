@@ -439,9 +439,12 @@ body {
 	margin:10px 0 8px;
 }
 .tech_para{
-	margin-top: 20px;
-	padding-left: 0;
-	padding-right: 0;
+	padding: 20px;
+	font-size: 25px;
+	line-height: 2em;
+	color: #3b3b3b;
+	text-align: center;
+	border-bottom: 4px solid #AA0000;
 }
 .technology_list1{
 	margin-top: 20px;	
