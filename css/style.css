@@ -37,7 +37,7 @@ body {
 	background: url('../images/technology.png') no-repeat  left;
 	background-size: 100%;
 	min-height: 300px;
-	padding-top: 7em;
+	/*padding-top: 7em;*/
 	color: #ffffff;
 	border-bottom:4px solid #aa0000;
 }
@@ -45,7 +45,7 @@ body {
 	background: url('../images/mm_companies.png') no-repeat  left;
 	background-size: 100%;
 	min-height: 850px;
-	padding-top: 7em;
+	/*padding-top: 7em;*/
 	color: #ffffff;
 	border-top:4px solid #aa0000;
 }
