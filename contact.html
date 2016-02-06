@@ -24,27 +24,29 @@
 <script>
     function postContactToGoogle() {
         var phone = $('#cuphone').val();
-        console.log('phone is ' + phone);
+       // console.log('phone is ' + phone);
 		var email = $('#cuemail').val();
-		console.log('email is' + email);
+	//	console.log('email is' + email);
         var name = $('#userName').val();
-        console.log('name is ' + name);
+      //  console.log('name is ' + name);
         var message = $('#cumessage').val();
-        console.log('message is ' + message);
+        //console.log('message is ' + message);
         
             $.ajax({
-                url: "https://docs.google.com/a/mediaxor.github.io/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
-                data: { "entry.1": name,
-				"entry.2": email,
-                "entry.3": phone, "entry.4": message },
+                url: "https://docs.google.com/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
+                data: { "entry.1317510071": name,
+				"entry.990382128": email,
+                "entry.817161042": phone, "entry.1365100489": message },
                 type: "POST",
                 dataType: "xml",
                 statusCode: {
                     0: function () {
-                        alert('some error occured');
-                    },
-                    200: function () {
-                        alert('successfully posted');
+                    	$('#cuphone').val("");
+                    	$('#cuemail').val("");
+                    	$('#userName').val("");
+                    	$('#cumessage').val("");
+                       $('.requestSubmited').show();
+                       console.log('IN error');
                     }
                 }
             });
@@ -122,6 +124,9 @@
 				  <div class="contact-form">
 				  	<h2>Contact Us</h2>
 					    <form id="callus" target="_self" onsubmit="" action="javascript: postContactToGoogle()">
+					     <div id="successRes" style="width: 100%; display: block; float: right; padding-top: 15px;">
+            				<div class="requestSubmited" style="display:none; text-align: center;font-size:medium">Your request has been sent!</div>
+        				  </div>
 					    	<div>
 						    	<span>name</span>
 						    	<span><input type="text" class="form-control" id="userName"></span>
@@ -143,6 +148,7 @@
 								<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit"></label>
 								
 						  </div>
+						 
 					    </form>
 				    </div>
   			</div>		
