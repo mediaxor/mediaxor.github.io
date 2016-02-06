@@ -33,7 +33,7 @@ body {
 	padding: 2% 0;
 }
 .tech_bg1 {
-	border-top:8px groove #333333;
+	border-top:4px groove #3a3a3a;
 	background: url('../images/technology.png') no-repeat  left;
 	background-size: 100%;
 	min-height: 300px;
@@ -844,10 +844,6 @@ body {
 @media only screen and (max-width: 1024px) {
 	.slider_bg {
 		min-height: 510px;
-		padding-top: 7em;
-	}
-	.tech_bg1 {
-		min-height: 300px;
 		padding-top: 7em;
 	}
 	.banner-info h2 {
