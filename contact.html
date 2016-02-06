@@ -1,16 +1,11 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>MXAcademy - Enriching Multimedia Talent</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -24,28 +19,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
    	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 <!----font-Awesome----->
 <!-- Google Form API script-->
-<script scr="https://ajax.googleapis.com/ajax/libsjquery/1.11.3/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libsjquery/1.11.3/jquery.min.js">
 </script>
 <script>
     function postContactToGoogle() {
-        var phone = $('#cuphone'),val();
+        var phone = $('#cuphone').val();
+        console.log('phone is ' + phone);
 		var email = $('#cuemail').val();
+		console.log('email is' + email);
         var name = $('#userName').val();
+        console.log('name is ' + name);
         var message = $('#cumessage').val();
+        console.log('message is ' + message);
         
             $.ajax({
-                url: "https://docs.google.com/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
-                data: { "entry_1317510071": name,
-				"entry_990382128": email,
-                "entry_817161042": phone, "entry_1365100489": message },
+                url: "https://docs.google.com/a/mediaxor.github.io/forms/d/1FMNWNMDGWh3GRFzf7J38W-AnZCxdofIXT2BlwJGpjKc/formResponse",
+                data: { "entry.1": name,
+				"entry.2": email,
+                "entry.3": phone, "entry.4": message },
                 type: "POST",
                 dataType: "xml",
                 statusCode: {
                     0: function () {
-                        window.location.replace("ThankYou.html");
+                        alert('some error occured');
                     },
                     200: function () {
-                        window.location.replace("ThankYou.html");
+                        alert('successfully posted');
                     }
                 }
             });
@@ -57,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="container">
 	<div class="row header">
 		<div class="logo">
-			<a href="index.html"><img src="images/MXOR3.png" alt=""></a>
+			<a href="index.html"><img src="images/MXOR2.png" alt=""></a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -76,7 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="index.html">Home</a></li>
-		        <li><a href="about.html">About</a></li>
+		        <li><a href="industry.html">Industry</a></li>
 		        <li><a href="multimedia.html">Multimedia</a></li>
 		        <li><a href="trainings.html">Trainings</a></li>
 		        <li class="active"><a href="contact.html">Contact</a></li>
@@ -102,6 +101,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--<div class="main row">
 			<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="font-family: 'Open Sans', sans-serif;color:#555555;text-shadow:0 1px 0 #ffffff; text-align:left;font-size:12px;padding: 5px;">View Larger Map</a></small>
 		</div>-->
+
 	</div>
 </div><!-- end main -->
 <div class="main_btm"><!-- start main_btm -->
@@ -110,7 +110,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			    <div class="col-md-4 company_ad">
 				    <h2>Address :</h2>
       				<address>
-						 <p>3/485 Malviya Nagar,</p>
+						 <p>3/485 Malviya Nagar</p>
 						 <p>Jaipur, Rajathan</p>
 						 <p>India</p>
 				   		<p>	Phone:(91) 9819 307 404</p>
@@ -121,7 +121,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-8">
 				  <div class="contact-form">
 				  	<h2>Contact Us</h2>
-					    <form>
+					    <form id="callus" target="_self" onsubmit="" action="javascript: postContactToGoogle()">
 					    	<div>
 						    	<span>name</span>
 						    	<span><input type="text" class="form-control" id="userName"></span>
@@ -140,7 +140,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 						   <div>
 								<!--<input id="ButtonSubmit" name="" type="button" value="Send" onclick="postContactToGoogle()"/>-->
-								<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit" onclick="postContactToGoogle()></label>
+								<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit"></label>
 								
 						  </div>
 					    </form>

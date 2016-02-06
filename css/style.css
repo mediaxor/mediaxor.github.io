@@ -151,22 +151,52 @@ body {
 .slider_bg{
 	background: url('../images/slider_bg.jpg') no-repeat;
 	background-size: 100%;
-	/*min-height:530px;*/
+	min-height:530px;
 	padding-top:13em;
+	border-bottom: 4px solid #AA0000;
 }
 /* start main */
 .main_bg{
 	background: #ffffff;
 }
-.main{
-	padding: 8% 0;
+.main_grey{
+	background: #3b3b3b;
+	border-top: 4px solid #AA0000;
+	border-bottom: 4px solid #AA0000;
 }
-.main_title h4{
+.main{
+	padding: 3% 0;
+}
+.main_text {
 	padding: 20px;
-	margin: 0 0 20px;
-	font-size: 3em;
+	font-size: 25px;
+	line-height: 2em;
+	color: #3b3b3b;
+	text-align: center;
+	border-bottom: 4px solid #AA0000;
+}
+.main_title_red {
+	padding: 40px;
 	color:#aa0000;
-	font-family: 'texgyreadventorregular';
+	line-height: 200%;
+	text-align: center;
+}
+.main_title_white {
+	padding: 40px;
+	color:#ffffff;
+	line-height: 200%;
+	text-align: center;
+}
+.main_subtitle_red h1{
+	color:#aa0000;
+	line-height: 200%;
+	text-align: left;
+}
+.main_para{
+	padding: 20px;
+	font-size: 20px;
+	line-height: 1.5em;
+	color: #101010;
 	text-align: center;
 }
 .main ul li{
@@ -224,8 +254,8 @@ body {
 	-ms-text-shadow: 1px 1px 0px #333333;
 }
 .para{
-	font-size: 14px;
-	line-height: 1.8em;
+	font-size: 20px;
+	line-height: 1.5em;
 	color: #868686;
 	text-align: justify;
 }
@@ -321,9 +351,9 @@ body {
 .content_left h4{
 	color: #353535;
 	font-size: 2.5em;
-	font-family: 'texgyreadventorregular';
+	/*font-family: 'texgyreadventorregular';*/
 	line-height: 1.5em;
-	text-align: center;
+	/*text-align: center;*/
 }
 .content_left h4 span{
 	color: #AA0000;
@@ -334,18 +364,19 @@ body {
 }
 /* start footer */
 .footer_bg{
-	background: #f6f6f6;
+	background: #3b3b3b;
+	border-top: 4px solid #AA0000;
 }
 .footer{
 	padding: 4%;
 }
 .copy p{
-	color: #333333;
-	font-size: 14px;
+	color: #ffffff;
+	font-size: 20px;
 	line-height: 1.8em;
 }
 .copy p a{
-	color:#AA0000;
+	color:#ffffff;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -798,6 +829,9 @@ body {
 	}
 	.para {
 		font-size: 13px;
+	}
+	.main_para {
+		font-size: 16px;
 	}
 	.content_right h4 {
 		font-size: 2em;
