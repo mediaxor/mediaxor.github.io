@@ -49,6 +49,15 @@ body {
 	color: #ffffff;
 	border-top:4px solid #aa0000;
 }
+.training_bg1 {
+	border-top:4px groove #3a3a3a;
+	background: url('../images/training.jpg') no-repeat  left;
+	background-size: 100%;
+	min-height: 300px;
+	padding-top: 1em;
+	color: #00000;
+	border-bottom:4px solid #aa0000;
+}
 .logo h1 {
 	float: left;
 	text-indent:-22222px;
