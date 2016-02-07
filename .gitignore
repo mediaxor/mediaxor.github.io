@@ -1,0 +1,10 @@
+/target/
+/bin/
+
+.settings/.jsdtscope
+
+.project
+
+.project
+
+*.prefs
