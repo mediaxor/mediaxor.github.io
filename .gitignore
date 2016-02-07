@@ -1,0 +1,11 @@
+/webapp/
+/target/
+/src/
+/META-INF/
+/.project
+/build.properties
+/.settings/
+/bin/
+
+pom.xml
+/.gitignore
