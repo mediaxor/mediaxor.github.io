@@ -228,6 +228,11 @@ body {
 	line-height: 200%;
 	text-align: center;
 }
+.tech_subtitle_grey h1{
+	color:#3b3b3b;
+	line-height: 200%;
+	text-align: center;
+}
 .main_para{
 	padding: 20px;
 	font-size: 20px;
