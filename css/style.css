@@ -43,7 +43,7 @@ body {
 }
 .tech_img {
 	background: url('../images/mm_companies.png') no-repeat  left;
-	background-size: 100%;
+	background-size: 100% 100%;
 	min-height: 850px;
 	padding-top: 7em;
 	color: #ffffff;
@@ -684,6 +684,10 @@ body {
 		min-height: 523px;
 		padding-top: 11em;
 	}
+	.tech_bg1 {
+		min-height: 280px;
+		padding-top: 7em;
+	}
 }
 @media only screen and (max-width: 1280px) {
 }
@@ -691,6 +695,9 @@ body {
 	.slider_bg {
 		min-height: 510px;
 		padding-top: 7em;
+	}
+	.tech_bg1 {
+		background-size: 100% 100%;
 	}
 	.banner-info h2 {
 		font-size: 4.5em;
@@ -754,6 +761,9 @@ body {
 		text-transform: uppercase;
 	}
 	.slider_bg {
+		background-size: 100% 100%;
+	}
+	.tech_bg1 {
 		background-size: 100% 100%;
 	}
 	.main {
