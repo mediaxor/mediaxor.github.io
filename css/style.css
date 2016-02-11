@@ -82,7 +82,7 @@ body {
 	outline: none;
 	color: #c6c6c6;
 	font-size: 13px;
-	border: 1px solid rgb(236, 236, 236);
+	border: 1px solid rgb(149, 149, 149);
 	background: #FFFFFF;
 	width: 73.333%;
 	line-height: 22px;
@@ -160,15 +160,16 @@ body {
 }
 .soc_icons ul li a{
 	color:#ffffff;
-	font-size: 24px;
+	font-size: 13px;
 	display: block;
 	line-height: 60px;
-	width: 60px;
+	width: 160px;	 
 	height: 60px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	text-transform: uppercase;
 }
 .soc_icons ul li a:hover{
 	background: #AA0000;
@@ -788,15 +789,15 @@ body {
 	margin-bottom: 10px;
 }
 .contact-form textarea {
-	font-family: 'Open Sans', 'sans-serif';
+	font-family: 'Open Sans', 'sans-serif', 'texgyreadventorregular';
 	padding: 10px;
 	display: block;
 	width: 99.3333%;
 	background: #ffffff;
 	outline: none;
-	color: #c0c0c0;
+	color: #333333;
 	font-size: 0.8725em;
-	border: 1px solid #ECECEC;
+	border: 1px solid rgb(149, 149, 149);
 	-webkit-appearance: none;
 	resize: none;
 	height: 120px;
@@ -810,11 +811,11 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 .contact-form textarea:focus{
-	border:1px solid #AA0000;
+	/* border:1px solid rgb(149, 149, 149); */
 }
 .form-control{
 	box-shadow: none;
-	border: 1px solid #ECECEC;
+	border: 1px solid rgb(149, 149, 149);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -917,10 +918,13 @@ body {
 		padding: 20px 15px;
 	}
 	.soc_icons ul li a {
-		font-size: 20px;
+		font-size: 13px;
 		line-height: 50px;
-		width: 51px;
+		width: 125px; 
 		height: 51px;
+		padding-left: 5px;
+		padding-right: 5px;
+		text-transform: uppercase;
 	}
 	.slider_bg {
 		background-size: 100% 100%;
@@ -998,8 +1002,9 @@ body {
 		padding: 8% 2%;
 	}
 	.soc_icons ul li a {
-		font-size: 20px;
+		font-size: 13px;
 		width: 46px;
+		text-transform: uppercase;
 	}
 	.images_1_of_4 h4 {
 		margin: 15px 0 10px;
