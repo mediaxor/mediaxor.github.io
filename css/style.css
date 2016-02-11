@@ -54,7 +54,7 @@ body {
 	background: url('../images/training.jpg') no-repeat  left;
 	background-size: 100%;
 	min-height: 400px;
-	padding-top: 4em;
+	padding-top: 7em;
 	color: #00000;
 	border-bottom:4px solid #aa0000;
 }
@@ -688,6 +688,10 @@ body {
 		min-height: 280px;
 		padding-top: 7em;
 	}
+	.training_bg1 {
+		min-height: 400px;
+		padding-top: 7em;
+	}
 }
 @media only screen and (max-width: 1280px) {
 }
@@ -697,6 +701,9 @@ body {
 		padding-top: 7em;
 	}
 	.tech_bg1 {
+		background-size: 100% 100%;
+	}
+	.training_bg1 {
 		background-size: 100% 100%;
 	}
 	.banner-info h2 {
@@ -764,6 +771,9 @@ body {
 		background-size: 100% 100%;
 	}
 	.tech_bg1 {
+		background-size: 100% 100%;
+	}
+	.training_bg1 {
 		background-size: 100% 100%;
 	}
 	.main {
