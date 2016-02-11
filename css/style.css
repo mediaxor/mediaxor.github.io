@@ -746,13 +746,12 @@ body {
 	.soc_icons ul li a {
 		font-size: 13px;
 		line-height: 50px;
-		/*width: 125px;*/
-		width: 51px; 
+		width: 125px;
 		height: 51px;
 		align: center;
-		/*padding-left: 5px;
+		padding-left: 5px;
 		padding-right: 5px;
-		text-transform: uppercase;*/
+		text-transform: uppercase;
 	}
 	.slider_bg {
 		background-size: 100% 100%;
