@@ -40,28 +40,48 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		alert('Please provide correct answer to question ');
     		return;
     	}
-        var phone = $('#cuphone').val();
+        var phone = $('#RPhone').val();
        // console.log('phone is ' + phone);
-		var email = $('#cuemail').val();
+		var email = $('#REmail').val();
 	//	console.log('email is' + email);
-        var name = $('#userName').val();
+        var fname = $('#FName').val();
       //  console.log('name is ' + name);
-        var message = $('#cumessage').val();
-        //console.log('message is ' + message);
+		var lname = $('#LName').val();
+		var college = $('#RCollege').val();
+		var stream = $('#RStream').val();
+		var branch = $('#RBranch').val();
+		var percentage = $('#RPercentage').val();
+		var program = $('#RProgram').val();
+		var project = $('#RProject').val();
+		
         
             $.ajax({
-                url: "https://docs.google.com/forms/d/1nq5xsCIEhDwB95S7OG6w97pK81c4Xb6iUnwpBuR89BE/formResponse",
-                data: { "entry.1082499048": name,
-				"entry.955035896": email,
-                "entry.1451503225": phone, "entry.1140068825": message },
+                url: "https://docs.google.com/forms/d/12xv6X01LfuoHq164LH9q7AMzNRQCfaZLowWuhfRYOVo/formResponse",
+                data: { "entry.808695098": fname,
+				"entry.1588160287": lname,
+				"entry.1850610586": email,
+                "entry.990255202": phone, 
+				"entry.813702958": college,
+				"entry.1226239206": stream,
+				"entry.817932212": branch,
+				"entry.1124689287": percentage,
+				"entry.307186486": program,
+				"entry.31080206": project
+				},
                 type: "POST",
                 dataType: "xml",
                 statusCode: {
                     0: function () {
-                    	$('#cuphone').val("");
-                    	$('#cuemail').val("");
-                    	$('#userName').val("");
-                    	$('#cumessage').val("");
+                    	$('#RPhone').val("");
+                    	$('#REmail').val("");
+                    	$('#FName').val("");
+                    	$('#LName').val("");
+						$('#RCollege').val("");
+						$('#RStream').val("");
+						$('#RBranch').val("");
+						$('#RPercentage').val("");
+						$('#RProgram').val("");
+						$('#RProject').val("");
                     	$('#cucaptcha').val("");
                        $('.requestSubmited').show();
                        //console.log('IN error');
@@ -105,22 +125,119 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</nav>
 		<div class="soc_icons navbar-right">
 			<ul class="list-unstyled text-center" >
-				<li><a href="register.html">Register</a></li>
-				<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+				<li class="active"><a href="register.html">Apply</a></li>
 			</ul>	
 		</div>
 	</div>
 	<div class="clearfix"></div>
 </div>
 </div>
-<div class="main_btm"><!-- start main_btm -->
+<!-- start main_btm -->
+<div class="main_btm">
 	<div class="container">
 		<div class="main row">
-			    <div class="col-md-8">
-				  <iframe src="https://docs.google.com/forms/d/12xv6X01LfuoHq164LH9q7AMzNRQCfaZLowWuhfRYOVo/viewform?embedded=true" width="710" height="1180" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			    <div class="col-md-6 content_left">
+					<div class="main_subtitle_red">
+						<h1>Eligibility</h1>
+					</div>
+					<ul>
+						<li>B.E, B.Tech ( VII Sem) in CS, ECE & IT</li>
+						<li>M.E, M.Tech, PhD in CS, ECE & IT</li>
+						<li>Min 65% aggregate ( until last term)</li>
+						<li>Basic C & Linux programming skills.</li>
+					</ul>
+					<div class="main_subtitle_red">
+						<h1>Application Guidelines</h1>
+					</div>
+					<ul>
+						<li>All fields are mandatory.</li>
+						<li>Provide valid Email Id and Contact Number.</li>
+						<li>We will review your application based on our selection criteria and send final registration details in email.</li>
+					</ul>
+				</div>
+				<div class="col-md-6 content_right">
+				  <div class="contact-form">
+				  	<div class="main_subtitle_red">
+						<h1>Training Application</h1>
+					</div>
+					    <form id="callus" target="_self" onsubmit="" action="javascript: postContactToGoogle()">
+					     <div id="successRes" style="width: 100%; display: block; float: right; padding-top: 15px;">
+            				<div class="requestSubmited" style="display:none; text-align: center;font-size:medium">Thank you !!</br> Your application has been submitted sccessfully. We are reviewing your application and shall get back over email at our earliest.</div>
+        				  </div>
+					    	<div>
+						    	<span>First Name <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="FName"></span>
+						    </div>
+							<div>
+						    	<span>Last Name <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="LName"></span>
+						    </div>
+						    <div>
+						    	<span>E-mail Id <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="REmail"></span>
+						    </div>
+							 <div>
+						    	<span>Mobile Number <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="RPhone"></span>
+						    </div>
+							<div>
+						    	<span>College <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="RCollege"></span>
+						    </div>
+							<div>
+						    	<span>Stream <font color="red">*</font></span>
+						    	<span><select type="tel" class="form-control" required=""id="RStream">
+										<option value="">Select</option>
+										<option value="BE">B.E.</option> 
+										<option value="B Tech">B.Tech</option> 
+										<option value="ME">M.E.</option>
+										<option value="ME">M.Tech.</option>
+										<option value="ME">PhD.</option>
+									</select>
+								</span>
+						    </div>
+							<div>
+						    	<span>Branch <font color="red">*</font></span>
+						    	<span><select type="tel" class="form-control" required=""id="RBranch">
+										<option value="">Select</option>
+										<option value="Computer Science Engineering">Computer Science Engineering</option> 
+										<option value="Electronics and Communication">Electronics and Communication</option> 
+										<option value="Information Technology">Information Technology</option>
+									</select>
+								</span>
+						    </div>
+							<div>
+						    	<span>Aggregate percentage till last term <font color="red">*</font></span>
+						    	<span><input type="text" class="form-control" id="RPercentage"></span>
+						    </div>
+							<div>
+						    	<span>Select Training Program <font color="red">*</font></span>
+						    	<span>
+									<select type="tel" class="form-control" required=""id="RProgram">
+										<option value="">Select</option>
+										<option value="Embedded Audio Engineering">Embedded Audio Engineering</option> 
+										<option value="Audio Signal Processing">Audio Signal Processing</option> 
+									</select>
+								</span>
+						    </div>
+							<div>
+						    	<span>Are you interested in doing final year project or thesis with us?<font color="red">*</font></span>
+						    	<span>
+									<input type="radio" name="project" value="yes" id="RProject">&nbsp; &nbsp;Yes</br>
+									<input type="radio" name="project" value="yes" id="RProject">&nbsp; &nbsp;No
+								</span>
+						    </div>
+						    <div>
+						    	<span><script type="text/javascript">document.write(question)</script></span>
+						    	<span><input type="text" class="form-control" id="cucaptcha"></span>
+						    </div>
+						   <div>
+								<!--<input id="ButtonSubmit" name="" type="button" value="Send" onclick="postContactToGoogle()"/>-->
+								<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit"/></label>
+								
+						  </div>
+						 
+					    </form>
 				</div>
   			</div>		
   			<div class="clearfix"></div>		
