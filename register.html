@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>MXAcademy - Enriching Multimedia Talent</title>
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
  <!--[if lt IE 9]>
      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -42,40 +42,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     		return;
     	}
         var phone = $('#RPhone').val();
-       console.log('phone is ' + phone);
+      // console.log('phone is ' + phone);
 		var email = $('#REmail').val();
-	   console.log('email is' + email);
+	  // console.log('email is' + email);
         var fname = $('#FName').val();
-       console.log('name is ' + fname);
+       //console.log('name is ' + fname);
 		var lname = $('#LName').val();
-		console.log('lname is ' + lname);
+	//	console.log('lname is ' + lname);
 		var college = $('#RCollege').val();
-		console.log('college is ' + college);
+	//	console.log('college is ' + college);
 		var stream = encodeURIComponent($('#RStream').val());
-		console.log('stream is ' + stream);
+	//	console.log('stream is ' + stream);
 		var branch = encodeURIComponent($('#RBranch').val());
-		console.log('branch is ' + branch);
+	//	console.log('branch is ' + branch);
 		var percentage = $('#RPercentage').val();
-		console.log('percentage is ' + percentage);
+	//	console.log('percentage is ' + percentage);
 		var program = encodeURIComponent($('#RProgram').val());
-		console.log('program is ' + program);
+	//	console.log('program is ' + program);
 		var project = $("input[type='radio'][name='project']:checked").val();
-		console.log('project is ' + project);
+	//	console.log('project is ' + project);
 		
         
             $.ajax({
                 url: "https://docs.google.com/forms/d/1m4BlI0hY_Ug9icgXXaSTNWiZPLs_x-mxP3V9zNGpv-s/formResponse",
                 data: { 
                 	"entry.1172233956": fname,
-				"entry.1407069069": lname,
+				"entry.1872462852": lname,
 				"entry.2017561187": email,
-                "entry.1766069897": phone, 
+                "entry.73257129": phone,
 				"entry.926062620": college,
 				"entry.1891647928": percentage,
-				"entry.389455522": stream,
-				"entry.428218774": branch,
-				"entry.78436163": program,
-				"entry.2020623435": project,
+				"entry.2091916070": stream,
+				"entry.369788150": branch,
+				"entry.873230028": program,
+				"entry.1066679707": project
 				},
                 type: "POST",
                 dataType: "xml",
@@ -209,9 +209,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    	<span>Branch <font color="red">*</font></span>
 						    	<span><select  class="form-control" id="RBranch" required>
 										<option value="">Select</option>
-										<option value="Computer Science Engineering">Computer Science Engineering</option> 
-										<option value="Electronics and Communication">Electronics and Communication</option> 
-										<option value="Information Technology">Information Technology</option>
+										<option value="Computer_Science_Engineering">Computer Science Engineering</option> 
+										<option value="Electronics_and_Communication">Electronics and Communication</option> 
+										<option value="Information_Technology">Information Technology</option>
 									</select>
 								</span>
 						    </div>
@@ -224,8 +224,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    	<span>
 									<select  class="form-control" required id="RProgram">
 										<option value="">Select</option>
-										<option value="Embedded Audio Engineering">Embedded Audio Engineering</option> 
-										<option value="Audio Signal Processing">Audio Signal Processing</option> 
+										<option value="Embedded_Audio_Engineering">Embedded Audio Engineering</option> 
+										<option value="Audio_Signal_Processing">Audio Signal Processing</option> 
 									</select>
 								</span>
 						    </div>
