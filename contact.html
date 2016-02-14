@@ -154,19 +154,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         				  </div>
 					    	<div>
 						    	<span>name</span>
-						    	<span><input type="text" class="form-control" id="userName"></span>
+						    	<span><input type="text" class="form-control" id="userName" maxlength="100" required></span>
 						    </div>
 						    <div>
 						    	<span>e-mail</span>
-						    	<span><input type="email" class="form-control" id="cuemail"></span>
+						    	<span><input type="email" class="form-control" id="cuemail" maxlength="100" required></span>
 						    </div>
 							 <div>
 						    	<span>Phone</span>
-						    	<span><input type="tel" class="form-control" id="cuphone"></span>
+						    	<span><input type="text" class="form-control" id="cuphone" pattern="[0-9]{10}" maxlength="10" title="Please provide 10 digit mobile number" required></span>
 						    </div>
 						    <div>
 						    	<span>Subject</span>
-						    	<span><textarea name="userMsg" id="cumessage"> </textarea></span>
+						    	<span><textarea name="userMsg" id="cumessage" maxlength="500" required> </textarea></span>
 						    </div>
 						    <div>
 						    	<span><script type="text/javascript">document.write(question)</script></span>
