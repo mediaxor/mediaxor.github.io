@@ -33,14 +33,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     var sum = firstnum + secondnum;
     var question = 'Are you a robot? What is the value of ' + firstnum.toString() + '+' + secondnum.toString() + '?';
     $('#cucaptcha').val("");
+    
     function postContactToGoogle() {
     	var captcha = $('#cucaptcha').val();
     	//console.log('captcha value ' + captcha);
     	//console.log('Sum is ' + sum);
+    	var percentage = $('#RPercentage').val();
+    	if(percentage > 100) {
+			alert('Please add valid percentage.');
+			return;
+		}
+    	
+    	
+    	
     	if(!(sum == captcha)) {
     		alert('Please provide correct answer to question ');
     		return;
     	}
+    	
         var phone = $('#RPhone').val();
       // console.log('phone is ' + phone);
 		var email = $('#REmail').val();
@@ -55,11 +65,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	//	console.log('stream is ' + stream);
 		var branch = encodeURIComponent($('#RBranch').val());
 	//	console.log('branch is ' + branch);
-		var percentage = $('#RPercentage').val();
+		var project = $("input[type='radio'][name='project']:checked").val();
+    	console.log('project is ' + project);
+    	if(typeof project == 'undefined') {
+    		alert('Please select option for project.');
+    		return;
+    	}
+		
 	//	console.log('percentage is ' + percentage);
 		var program = encodeURIComponent($('#RProgram').val());
 	//	console.log('program is ' + program);
-		var project = $("input[type='radio'][name='project']:checked").val();
+		
 	//	console.log('project is ' + project);
 		
         
@@ -90,7 +106,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						$('#RBranch').val("");
 						$('#RPercentage').val("");
 						$('#RProgram').val("");
-						$('#RProject').val("");
+						$("input:radio[name='project']").each(function(i) {
+						       this.checked = false;
+						});
                     	$('#cucaptcha').val("");
                        $('.requestSubmited').show();
                        console.log('IN error');
@@ -175,23 +193,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         				  </div>
 					    	<div>
 						    	<span>First Name <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="FName"></span>
+						    	<span><input type="text" class="form-control" id="FName" maxlength="50" required></span>
 						    </div>
 							<div>
 						    	<span>Last Name <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="LName"></span>
+						    	<span><input type="text" class="form-control" id="LName" maxlength="50" required></span>
 						    </div>
 						    <div>
 						    	<span>E-mail Id <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="REmail"></span>
+						    	<span><input type="email" class="form-control" id="REmail" maxlength="100" required></span>
 						    </div>
 							 <div>
 						    	<span>Mobile Number <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="RPhone"></span>
+						    	<span><input type="text" class="form-control" id="RPhone" pattern="[0-9]{10}" maxlength="10" title="Please provide 10 digit mobile number" required></span>
 						    </div>
 							<div>
 						    	<span>College <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="RCollege"></span>
+						    	<span><input type="text" class="form-control" id="RCollege" maxlength="150" required></span>
 						    </div>
 							<div>
 						    	<span>Stream <font color="red">*</font></span>
@@ -217,7 +235,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 							<div>
 						    	<span>Aggregate percentage till last term <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" id="RPercentage"></span>
+						    	<span><input type="text" class="form-control" maxlength="3" pattern="\d*"title="Please provide valid percentage." id="RPercentage"></span>
 						    </div>
 							<div>
 						    	<span>Select Training Program <font color="red">*</font></span>
