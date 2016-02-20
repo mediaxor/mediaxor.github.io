@@ -39,10 +39,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	//console.log('captcha value ' + captcha);
     	//console.log('Sum is ' + sum);
     	var percentage = $('#RPercentage').val();
-    	if(percentage > 100) {
+    	if(percentage < 0 && percentage > 100) {
 			alert('Please add valid percentage.');
 			return;
 		}
+    	
+    	var email = $('#REmail').val();
     	
     	
     	
@@ -53,7 +55,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	
         var phone = $('#RPhone').val();
       // console.log('phone is ' + phone);
-		var email = $('#REmail').val();
+		
 	  // console.log('email is' + email);
         var fname = $('#FName').val();
        //console.log('name is ' + fname);
@@ -97,6 +99,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 dataType: "xml",
                 statusCode: {
                     0: function () {
+                    	
                     	$('#RPhone').val("");
                     	$('#REmail').val("");
                     	$('#FName').val("");
@@ -111,7 +114,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						});
                     	$('#cucaptcha').val("");
                        $('.requestSubmited').show();
-                       console.log('IN error');
+                       $('html, body').animate({
+                           scrollTop: $(".navbar-header").offset().top
+                       }, 2000);
+                       //console.log('IN error');
                     }
                 }
             });
@@ -171,7 +177,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li>B.E, B.Tech ( VI, VIII Sem) in CS, ECE &amp; IT</li>
 						<li>M.E, M.Tech, PhD in CS, ECE &amp; IT</li>
 						<li>Basic C &amp; Linux programming skills.</li>
-						<li>Strong interest in Signal Processing</li>
 					</ul>
 					<div class="main_subtitle_red">
 						<h1>Application Guidelines</h1>
@@ -210,7 +215,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 						    <div>
 						    	<span>E-mail Id <font color="red">*</font></span>
-						    	<span><input type="email" class="form-control" id="REmail" maxlength="100" required></span>
+						    	<span><input type="email" class="form-control" id="REmail" maxlength="100" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required></span>
 						    </div>
 							 <div>
 						    	<span>Mobile Number <font color="red">*</font></span>
@@ -244,7 +249,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 							<div>
 						    	<span>Aggregate percentage till last term <font color="red">*</font></span>
-						    	<span><input type="text" class="form-control" maxlength="3" pattern="\d*"title="Please provide valid percentage." id="RPercentage"></span>
+						    	<span><input type="text" class="form-control" maxlength="3" pattern="\d*" title="Please provide valid percentage." id="RPercentage" required></span>
 						    </div>
 							<div>
 						    	<span>Select Training Program <font color="red">*</font></span>

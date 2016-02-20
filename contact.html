@@ -64,6 +64,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     	$('#cumessage').val("");
                     	$('#cucaptcha').val("");
                        $('.requestSubmited').show();
+                       $('html, body').animate({
+                           scrollTop: $(".main_btm").offset().top
+                       }, 1000);
                        //console.log('IN error');
                     }
                 }
@@ -158,7 +161,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    </div>
 						    <div>
 						    	<span>e-mail</span>
-						    	<span><input type="email" class="form-control" id="cuemail" maxlength="100" required></span>
+						    	<span><input type="email" class="form-control" id="cuemail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="100" required></span>
 						    </div>
 							 <div>
 						    	<span>Phone</span>
