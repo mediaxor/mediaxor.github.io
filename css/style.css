@@ -713,7 +713,7 @@ body {
 	.main_img-gen > img {
 		display: block;
 		height: auto;
-		width: auto;
+		max-width: 80%;
 		margin: 4%;	    
 		align: center;	    
 	}
@@ -741,7 +741,7 @@ body {
 	.main_img-gen > img {
 		display: block;
 		height: auto;
-		width: auto;
+		max-width: 80%;
 		margin: 4%;
 		align: center;	    
 	}
@@ -852,7 +852,7 @@ body {
 	.main_img-gen > img {
 		display: block;
 		height: auto;
-		width: auto;
+		max-width: 80%;
 		margin: 4%;
 		align: center;	    
 	}
@@ -907,7 +907,7 @@ body {
 	.main_img-gen > img {
 		display: block;
 		height: auto;
-		width: auto;
+		max-width: 80%;
 		margin: 4%;
 		align: center;	    
 	}
@@ -955,7 +955,7 @@ body {
 	.main_img-gen > img {
 		display: block;
 		height: auto;
-		width: auto;
+		max-width: 80%;
 		margin: 4%;
 		align: center;	    
 	}
