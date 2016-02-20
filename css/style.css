@@ -204,10 +204,9 @@ body {
 }
 .img-gen > img {
   display: block;
-  max-width: 40%;
+  max-width: 80%;
   height: auto;
   padding-top: 120px;
-  
 }
 .main_text {
 	padding: 20px;
