@@ -198,6 +198,17 @@ body {
 .main{
 	padding: 3% 0;
 }
+.main_img{
+	padding:40px;
+	min-height:600px; 
+}
+.img-gen > img {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  padding-top: 120px;
+  
+}
 .main_text {
 	padding: 20px;
 	font-size: 25px;
