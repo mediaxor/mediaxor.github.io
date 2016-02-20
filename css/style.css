@@ -49,6 +49,13 @@ body {
 	color: #ffffff;
 	border-top:4px solid #aa0000;
 }
+.tech_img-gen > img {
+  display: block;
+  height: auto;
+  width: 90%;
+  margin: 2%;
+  align: center;    
+}
 .training_bg1 {
 	border-top:4px groove #3a3a3a;
 	background: url('../images/training.jpg') no-repeat  left;
@@ -200,11 +207,10 @@ body {
 }
 .main_img-gen > img {
   display: block;
-  /*max-width: 80%;*/
   height: auto;
   margin: 4%;
   padding-top: 120px;
-    
+  align: center;    
 }
 .main_text {
 	padding: 20px;
@@ -709,6 +715,14 @@ body {
 		height: auto;
 		width: auto;
 		margin: 4%;	    
+		align: center;	    
+	}
+	.tech_img-gen > img {
+		display: block;
+		height: auto;
+		width: 90%;
+		margin: 2%;
+		align: center;    
 	}	
 }
 @media only screen and (max-width: 1280px) {
@@ -723,6 +737,20 @@ body {
 	}
 	.training_bg1 {
 		background-size: 100% 100%;
+	}
+	.main_img-gen > img {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 4%;
+		align: center;	    
+	}
+	.tech_img-gen > img {
+		display: block;
+		height: auto;
+		width: 90%;
+		margin: 2%;
+		align: center;    
 	}
 	.banner-info h2 {
 		font-size: 4.5em;
@@ -821,6 +849,20 @@ body {
 	.technology h4 {
 		font-size: 20px;
 	}
+	.main_img-gen > img {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 4%;
+		align: center;	    
+	}
+	.tech_img-gen > img {
+		display: block;
+		height: auto;
+		width: 90%;
+		margin: 2%;
+		align: center;    
+	}
 }
 @media only screen and (max-width: 640px){
 	.company_ad{
@@ -834,6 +876,7 @@ body {
 	}
 }
 @media only screen and (max-width: 480px) {
+	
 	.images_1_of_4 h4 {
 		margin: 20px 0 10px;
 	}
@@ -861,6 +904,20 @@ body {
 	.detail h2{
 		font-size: 2em;	
 	}
+	.main_img-gen > img {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 4%;
+		align: center;	    
+	}
+	.tech_img-gen > img {
+		display: block;
+		height: auto;
+		width: 90%;
+		margin: 2%;
+		align: center;    
+	}	
 }
 @media only screen and (max-width: 320px) {
 	.main {
@@ -894,5 +951,19 @@ body {
 	}
 	.blog_list ul li:nth-child(3){
 		margin-left: 0;
+	}
+	.main_img-gen > img {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 4%;
+		align: center;	    
+	}
+	.tech_img-gen > img {
+		display: block;
+		height: auto;
+		width: 90%;
+		margin: 2%;
+		align: center;    
 	}
 }
