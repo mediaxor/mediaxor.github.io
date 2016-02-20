@@ -204,10 +204,10 @@ body {
 }
 .img-gen > img {
   display: block;
-  max-width: 80%;
+  /*max-width: 80%;*/
   height: auto;
-  margin: 8%;
-  padding-top: 100px;
+  margin: 4%;
+  padding-top: 120px;
     
 }
 .main_text {
