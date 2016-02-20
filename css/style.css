@@ -206,7 +206,9 @@ body {
   display: block;
   max-width: 80%;
   height: auto;
-  padding-top: 120px;
+  margin: 8%;
+  padding-top: 100px;
+    
 }
 .main_text {
 	padding: 20px;
