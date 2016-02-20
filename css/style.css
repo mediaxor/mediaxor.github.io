@@ -198,11 +198,7 @@ body {
 .main{
 	padding: 3% 0;
 }
-.main_img{
-	padding:40px;
-	min-height:600px; 
-}
-.img-gen > img {
+.main_img-gen > img {
   display: block;
   /*max-width: 80%;*/
   height: auto;
@@ -708,6 +704,12 @@ body {
 		min-height: 400px;
 		padding-top: 7em;
 	}
+	.main_img-gen > img {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 4%;	    
+	}	
 }
 @media only screen and (max-width: 1280px) {
 }
